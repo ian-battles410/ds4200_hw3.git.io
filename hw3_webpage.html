@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting Energy Prices</title>
+	<style>
+	body {
+		background-color: #f5deb3; 
+		color: #5a3e1b;
+		font-family: Arial, sans-serif;
+		margin: 20px;
+		padding: 20px;
+	}
+
+	h1, h2 {
+		color: #8b4513; 
+	}
+
+	nav a {
+		color: #5a3e1b;
+		text-decoration: none;
+		margin: 0 10px;
+		font-weight: bold;
+	}
+
+	nav a:hover {
+		color: #d2691e; 
+	}
+
+	ul {
+		background-color: #fff8dc; 
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border: 2px solid #8b4513;
+		padding: 5px;
+		background-color: #fff;
+	}
+</style>
+</head>
+<body>
+    <h1>Predicting Energy Prices Through Weather Variables</h1>
+    <nav>
+        <a href="#introduction">Introduction</a> |
+        <a href="models.html">Models</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+    <h2 id="contact">Ian Battles</h2>
+    <p>Email: battles.i@northeastern.edu</p>
+    <p>GitHub: <a href="https://github.khoury.northeastern.edu/ianbattles">github</a></p>
+</body>
+</html>
+<body>
+    <h1 id = "introduction" >Introduction</h1>
+    <h2>Energy's price fluctuations</h2>
+<p> 
+Energy price can be highly variable! Below are graphs of monthly and hourly energy prices in boston: 
+</p>
+<img src="price1.png" alt="Monthly Boston Energy Price">
+
+<img src="price2.png" alt="Hourly Boston Energy Price">
+
+
+<p> 
+Both supply and demand factors influence energy price fluctuations. 
+	On the supply side, common reasons include the global supply of oil/natural gas, capacity issues/congestion, and renewable energy production. 
+	As oil and natural gas are commonly-used energy sources, global fluctuations in oil and gas production affect its price. 
+	Congestion occurs when demand is higher than the transmission capacity of power lines, increasing price. 
+	Most renewable energies (solar, wind, hydroelectric) are intermittent energy sources, meaning that the production of energy is variable and not always guaranteed. 
+	Weather variables such as wind speed (wind power) and cloud coverage (solar power) affect total available energy, which dictates price.
+	Demand side issues include time of day and weather. People generally use high amounts of electricity at the same time; for example, as most workers get home from work around 5-6pm, they all turn on lights and appliances at the same time. 
+	Weather events such as a very high and low temperature increase AC usage, which increases the demand for energy. 
+	My goal is to isolate renewable energy production and weather-based demand’s effects on the energy market.
+	<h2>Datasets</h2>
+</p>
+Massachusetts is a good candidate for modeling temperature as a predictor of energy price. Massachusetts has high seasonality and widespread AC usage. I used New England ISO’s extremely detailed hourly dataset of Massachusetts energy prices, split into central/western Mass, southeast Mass, and northeast Mass/Boston . 
+I chose Los Angeles for determining the effect of renewable energy production, specifically solar energy. California gets 28% of its energy from solar farms , and LA has additional large amounts of rooftop consumer solar panels (Osaka, 2024). I used California ISO’s hourly energy price dataset of California energy prices. 
+For weather data, I used Visual Crossing, a historical weather data API. Visual crossing uses nearby weather station data. For Massachusetts, I gathered hourly weather data for Worcester, Taunton, and Boston, the largest population centers in Central, Southwest, and Northeast Massachusetts respectively. This is to align with the three regions of New England ISO’s energy price. LA’s weather data was also obtained from Visual Crossing. 
+
+<p>
+Read about the models here:
+</p>
+<a href="models.html">Models</a> |
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-color: #f5deb3; /* Light brown background */
+    color: #5a3e1b; /* Dark brown text */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #8b4513; /* Saddle brown headings */
+}
+
+nav a {
+    color: #5a3e1b;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d2691e; /* Chocolate brown hover effect */
+}
+
+ul {
+    background-color: #fff8dc; /* Cornsilk background for lists */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #8b4513;
+    padding: 5px;
+    background-color: #fff;
+}

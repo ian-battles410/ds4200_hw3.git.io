@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+	body {
+		background-color: #f5deb3; 
+		color: #5a3e1b;
+		font-family: Arial, sans-serif;
+		margin: 20px;
+		padding: 20px;
+	}
+
+	h1, h2 {
+		color: #8b4513; 
+	}
+
+	nav a {
+		color: #5a3e1b;
+		text-decoration: none;
+		margin: 0 10px;
+		font-weight: bold;
+	}
+
+	nav a:hover {
+		color: #d2691e; 
+	}
+
+	ul {
+		background-color: #fff8dc; 
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border: 2px solid #8b4513;
+		padding: 5px;
+		background-color: #fff;
+	}
+</style>
+</head>
+</head>
+<body>
+    <h1>Energy Price Prediction Models</h1>
+    <nav>
+        <a href="hw3_webpage.html">Introduction</a> |
+        <a href="models.html">Models</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+    <p>All models were trained on 2023 data and tested on 2024 data.</p>
+    <ul>
+        <li><strong>Nonlinear Regression (Massachusetts dataset)</strong></li>
+        <img src="pricebos.png" alt="Boston nonlinear regression">
+        <p>This model predicts the nonlinear relationship between temperature and energy price. While effective at modeling trends, it does not fully capture price spikes.</p>
+        
+        <li><strong>Linear Model (California dataset)</strong></li>
+        <img src="pricecal1.png" alt="California Linear Regression">
+        <p>This model predicts how solar radiation affects energy prices but does not fully account for variance at lower solar levels.</p>
+        
+        <li><strong>Monte Carlo Simulation (California dataset)</strong></li>
+        <img src="pricecal2.png" alt="California Monte Carlo Simulation">
+        <p>The Monte Carlo simulation effectively predicts yearly energy prices based on solar radiation. It is useful for forecasting long-term trends rather than short-term fluctuations.</p>
+    </ul>
+    <h2 id="contact">Contact</h2>
+    <p>Email: battles.i@northeastern.edu</p>
+    <p>GitHub: <a href="https://github.com/yourgithub">github</a></p>
+</body>
+</html>
